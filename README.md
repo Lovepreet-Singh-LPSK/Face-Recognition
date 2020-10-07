@@ -39,13 +39,15 @@ Face Recognition is a process of face detection and then classifying the faces i
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
 - Haar-Like Features application:→
-| ![Screen 1](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) | ![Screen 2](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) |
+| ![Screen 1](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) | ![Screen 2](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png) |
+|---------------------------------------------|---------------------------------------------|
 - Integral Image:→
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
 ​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
 - Training:→
 The algorithm in training is setting a minimum threshold to determine whether something can be classified as a feature or not. The computation can be really expensive depending on the different possible combinations of features for each region of the sliding rectangle.
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/cascade.png)
+
 For each region, a linear combination of the weak classifiers(on the right) is obtained toform a strong classifier(on the left). AdaBoost is used forthis task. Adaboost works like,first we classify images using important feature acc. to us. The images for whichclassification is the wrong Adaboost uses another feature to classify wrong classified images, giving more importance to the wrong classified images. In other words, increasing the weight for these images in the overall algorithm. Similarly, we will go for the next feature and at last giving larger weight to the last image. Thus Adaboost forms the classifier from these Weak classifiers.
 - Cascading:→
 ​It is a hack to increase the speed and accuracy of Boosting. 
