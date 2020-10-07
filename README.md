@@ -8,7 +8,7 @@ This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
 - [Project Theory](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#project-theory)
 - [Train Your Own Haar-Cascade Classifier](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#Train-your-own-Haar-Cascade-Classifier)
-- [Contributing](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#Train-your-own-Haar-Cascade-Classifier)
+- [Contributing](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#contributing)
 
 ## Project Theory
 
