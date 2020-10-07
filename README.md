@@ -36,7 +36,9 @@ Face Recognition is a process of face detection and then classifying the faces i
 ##### How the Viola-Jones algorithm detects Faces:→
 Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
 ##### Haar-Like Features:→ ​
+
 These are the features named Edge, Line, and four-sided features.
+
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
@@ -88,7 +90,9 @@ The feature is looked in the sub-window on the image and if Feature-i (Fi) is no
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/test.png) 
 
 The algorithm is tested on different values of K i.e. no. of eigenfaces to be taken for linear combination. The graph I got is:
+
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/graph_acc.png) 
+
 Although, Graph changes with each run of the algorithm because of random shuffling of images and thus splitting into training and testing sets. But in all graphs, it can be seen that the algorithm performs fairly good even on a small no. of images for the value of k which is between k=5 and k=80. It can be observed that Algorithm accuracy got peaks at some values of K and give almost the same performance at higher values of K.
 
 **NOTE** `Further in more detail is explained within the code`
@@ -97,8 +101,35 @@ Although, Graph changes with each run of the algorithm because of random shuffli
 
 [[Back to top]](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#index)
 
+**NOTE** Haar-Cascade classifier training is done using OpenCV methods `opencv_createsamples`, `opencv_traincascade`. But These methods aren't available in the Opencv which is installed using `python`. So, First we need to install full version of Opencv, using `CMake` and `Visual Studio`, to utilize the functions for training.
 
+#### Steps to follow to install Full-OpenCV:
+- 1.) <a href = "https://cmake.org/install/">Install CMake-Gui on Windows/Linux</a>
+- 2.) Clone OpenCV repo:
+```bash
+$ git clone https://github.com/opencv/opencv.git
+$ mkdir build
+$ cmake-gui
+```
+- 3.) Now CMake-Gui will be opened like:
 
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/cmake.png) 
+
+- 4.) Select Source Code Directory in Cmake-Gui to the directory of OpenCV cloned folder (Created In Step 2).
+- 5.) Select Build Binaries Directory in Cmake-Gui to the directory build we created (Created In Step 2).
+- 6.) Select Configure in Cmake-build and select Visual Studio in the dropdown menu (I selected Sublime in the Pic):
+
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/bin.png) 
+
+- 7.) Now, Press Generate to generate the files in the build directory.
+- 8.) Go to the directory build now (build created in step 2).
+- 7.) Now, Search for `createsamples` in this directory and open the location of the `createsamples`.
+
+##### Training Classifier:
+
+**NOTE** Now `opencv_createsamples` and `opencv_traincascade` is available to use in the build directory somewhere(You can search).
+
+- 1.) 
 
 | ![Screen 1](http://i.imgur.com/3MzfmbT.jpg) | ![Screen 2](http://i.imgur.com/4OgIByR.png) |
 |---------------------------------------------|---------------------------------------------|
