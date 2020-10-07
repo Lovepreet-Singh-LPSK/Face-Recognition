@@ -39,7 +39,9 @@ Face Recognition is a process of face detection and then classifying the faces i
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
 - Haar-Like Features application:→
-![Screen 1](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) | ![Screen 2](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
+Haar Application Face             |  Haar Application
+:-------------------------:|:-------------------------:
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png)  |  ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
 - Integral Image:→
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
 ​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
