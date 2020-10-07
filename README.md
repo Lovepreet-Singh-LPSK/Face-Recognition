@@ -7,7 +7,7 @@ This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 ## Index
 
 - [Project Theory](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#project-theory)
-- [Train Your Own Haar-Cascade Classifier](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#train)
+- [Train Your Own Haar-Cascade Classifier](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#Train-your-own-Haar-Cascade-Classifier)
 - [Controls](https://github.com/tasdikrahman/spaceShooter#controls)
 - [Installation](https://github.com/tasdikrahman/spaceShooter#installation)
 - [For Windows](https://github.com/tasdikrahman/spaceShooter#for-windows)
@@ -33,8 +33,10 @@ Face Recognition is a process of face detection and then classifying the faces i
 
 ##### The very basic flow of the Face Recognition:
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/flowchart.png)
-##### How the Viola-Jones algorithm detects Faces:→ Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
-##### Haar-Like Features:→ ​ These are the features named Edge, Line, and four-sided features.
+##### How the Viola-Jones algorithm detects Faces:→
+Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
+##### Haar-Like Features:→ ​
+These are the features named Edge, Line, and four-sided features.
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
