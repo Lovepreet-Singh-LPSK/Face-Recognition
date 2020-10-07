@@ -64,6 +64,33 @@ The feature is looked in the sub-window on the image and if Feature-i (Fi) is no
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) 
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png)
 
+- 2.) Then the images are flattened and stored into an array of ​ images​ .
+- 3.) Now, we calculate the average of all the images with shape (N​ *N,1). This average image is the so-called average face.
+
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/avg.png) 
+
+- 4.) Now, this average image is subtracted from all the Images to obtain a difference matrix.
+- 5.) The shape of the difference matrix is (N*N, M).
+- 6.) Now, the Covariance matrix is obtained from the difference matrix by multiplying its transpose with itself.
+- 7.) The eigenvectors and eigenvalues of the matrix are obtained. Eigenvectors will determine the direction of maximum variability in the space. Therefore, top k eigenvectors are picked up from the obtained vectors by using the eigenvalues.
+
+- The eigenvectors (eigenfaces in this case) obtained are:
+
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/eigfaces1.png) 
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/eigfaces2.png)
+
+- 8.) Then, Training images are expressed as the linear combination of these top K eigenfaces. Weights for each image are stored in a weight array.
+
+- Testing: ​ Now, for testing an image, the image is flattened and the average face of training images is subtracted. Then weights for the test image are obtained. Then the distance of the weights of the test image is calculated from the weights of the training images. The label corresponding to the training image, from which the distance of weights is minimum, is given to the test image and thus the image is classified.
+
+- Results and Observations : ​ (Images are classified with Label too in the code*)
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/test.png) 
+
+The algorithm is tested on different values of K i.e. no. of eigenfaces to be taken for linear combination. The graph I got is:
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/graph_acc.png) 
+Although, Graph changes with each run of the algorithm because of random shuffling of images and thus splitting into training and testing sets. But in all graphs, it can be seen that the algorithm performs fairly good even on a small no. of images for the value of k which is between k=5 and k=80. It can be observed that Algorithm accuracy got peaks at some values of K and give almost the same performance at higher values of K.
+
+**NOTE** `Further in more detail is explained within the code`
 
 ## Screenshots
 
