@@ -1,9 +1,10 @@
-## Face Recognition Using Viola Jones and Eigen Faces Algorithm
+<img src="https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png" width="100" height="100" style="float:left;position:relative;"/>
+
+<h1 style = "float:right;position:absolute;right:0;top:0;">Face Recognition Using Viola Jones and Eigen Faces Algorithm</h1>
 
 This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
-<img src="https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png" width="150" height="20"/>
-<a href="https://www.producthunt.com/posts/space-shooter"><img src="https://raw.githubusercontent.com/wingify/across-tabs/master/images/product_hunt.png" width="100" height="20"/></a>
+
 
 
 ## Index
