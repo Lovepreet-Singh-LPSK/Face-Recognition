@@ -58,9 +58,7 @@ The feature is looked in the sub-window on the image and if Feature-i (Fi) is no
 ##### How the Eigen-Faces algorithm classifies the Faces ​ (All images are obtained from my code of Facial Recognition*)​ :
 - Training:→
 - 1.) ​ Suppose we have M images of dimensions NxN.
-                                                                       Faces 1             |  Faces 2
-:-----------------------------------------------------------------------------------------:|:--------------------------------------------:
-![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png)  |  ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png)
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png)
 
 
 ## Screenshots
