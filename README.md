@@ -39,9 +39,8 @@ Face Recognition is a process of face detection and then classifying the faces i
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
 - Haar-Like Features application:→
-Haar Application Face             |  Haar Application
-:-------------------------:|:-------------------------:
-![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png)  |  ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png)   
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
 - Integral Image:→
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
 ​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
@@ -58,9 +57,10 @@ The feature is looked in the sub-window on the image and if Feature-i (Fi) is no
 ##### How the Eigen-Faces algorithm classifies the Faces ​ (All images are obtained from my code of Facial Recognition*)​ :
 - Training:→
 - 1.) ​ Suppose we have M images of dimensions NxN.
-<div>
-![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png)
-</div>
+
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) 
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png)
+
 
 ## Screenshots
 
