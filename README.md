@@ -2,7 +2,7 @@
 
 This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
-<img src="https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/pics/FaceRecLogo.png" width="150" height="20"/>
+<img src="https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png" width="150" height="20"/>
 <a href="https://www.producthunt.com/posts/space-shooter"><img src="https://raw.githubusercontent.com/wingify/across-tabs/master/images/product_hunt.png" width="100" height="20"/></a>
 
 
