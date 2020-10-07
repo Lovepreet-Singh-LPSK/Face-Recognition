@@ -1,9 +1,5 @@
-<div style="position:relative;">
-
 <img src="https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png" width="100" height="100">
-<h1 style = "position:absolute;right:0;top:0;">Face Recognition Using Viola Jones and Eigen Faces Algorithm</h1>
-
-</div>
+<h1>Face Recognition Using Viola Jones and Eigen Faces Algorithm</h1>
 
 This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
