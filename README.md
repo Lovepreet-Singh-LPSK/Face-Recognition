@@ -6,9 +6,8 @@ This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
 ## Index
 
-- [Demo](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#project-theory)
-- [Screenshots](https://github.com/tasdikrahman/spaceShooter#screenshots)
-- [Game Features](https://github.com/tasdikrahman/spaceShooter#game-features)
+- [Project Theory](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#project-theory)
+- [Train Your Own Haar-Cascade Classifier](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#train)
 - [Controls](https://github.com/tasdikrahman/spaceShooter#controls)
 - [Installation](https://github.com/tasdikrahman/spaceShooter#installation)
 - [For Windows](https://github.com/tasdikrahman/spaceShooter#for-windows)
@@ -34,20 +33,20 @@ Face Recognition is a process of face detection and then classifying the faces i
 
 ##### The very basic flow of the Face Recognition:
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/flowchart.png)
-- How the Viola-Jones algorithm detects Faces:→ Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
-- Haar-Like Features:→ ​ These are the features named Edge, Line, and four-sided features.
+##### How the Viola-Jones algorithm detects Faces:→ Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
+##### Haar-Like Features:→ ​ These are the features named Edge, Line, and four-sided features.
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
 
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
-- Haar-Like Features application:→
+##### Haar-Like Features application:→
 
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png)   
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
 
-- Integral Image:→
+##### Integral Image:→
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
 ​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
-- Training:→
+##### Training:→
 The algorithm in training is setting a minimum threshold to determine whether something can be classified as a feature or not. The computation can be really expensive depending on the different possible combinations of features for each region of the sliding rectangle.
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/cascade.png)
 
@@ -58,7 +57,7 @@ For each region, a linear combination of the weak classifiers(on the right) is o
 The feature is looked in the sub-window on the image and if Feature-i (Fi) is not present in this window then that sub-window is rejected and the process stopped for that window thus preventing further checking of the features. Since we have to do it for each feature it may be slow without Cascading.
 
 ##### How the Eigen-Faces algorithm classifies the Faces ​ (All images are obtained from my code of Facial Recognition*)​ :
-- Training:→
+##### Training:→
 - 1.) ​ Suppose we have M images of dimensions NxN.
 
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) 
@@ -92,9 +91,12 @@ Although, Graph changes with each run of the algorithm because of random shuffli
 
 **NOTE** `Further in more detail is explained within the code`
 
-## Screenshots
+## Train your own Haar-Cascade Classifier
 
-[[Back to top]](https://github.com/tasdikrahman/spaceShooter#index)
+[[Back to top]](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#index)
+
+
+
 
 | ![Screen 1](http://i.imgur.com/3MzfmbT.jpg) | ![Screen 2](http://i.imgur.com/4OgIByR.png) |
 |---------------------------------------------|---------------------------------------------|
