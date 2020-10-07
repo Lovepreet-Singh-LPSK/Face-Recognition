@@ -37,10 +37,13 @@ Face Recognition is a process of face detection and then classifying the faces i
 - How the Viola-Jones algorithm detects Faces:→ Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
 - Haar-Like Features:→ ​ These are the features named Edge, Line, and four-sided features.
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
+
 These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
 - Haar-Like Features application:→
+
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png)   
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app1.png)
+
 - Integral Image:→
 ![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
 ​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
