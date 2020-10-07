@@ -1,4 +1,4 @@
-![Logo](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png=100x100) Face Recognition Using Viola Jones and Eigen Faces Algorithm
+![Logo](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/FaceRecLogo.png =100x100) Face Recognition Using Viola Jones and Eigen Faces Algorithm
 <!-- <img src="" width="100" height="100"> -->
 
 <!-- <h1 style = "float:right;position:absolute;right:0;top:0;"></h1> -->
