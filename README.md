@@ -4,18 +4,16 @@
 This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 
 
-
-
 ## Index
 
-- [Demo](https://github.com/tasdikrahman/spaceShooter#demo)
-  - [Screenshots](https://github.com/tasdikrahman/spaceShooter#screenshots)
+- [Demo](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#project-theory)
+- [Screenshots](https://github.com/tasdikrahman/spaceShooter#screenshots)
 - [Game Features](https://github.com/tasdikrahman/spaceShooter#game-features)
-  - [Controls](https://github.com/tasdikrahman/spaceShooter#controls)
+- [Controls](https://github.com/tasdikrahman/spaceShooter#controls)
 - [Installation](https://github.com/tasdikrahman/spaceShooter#installation)
-  - [For Windows](https://github.com/tasdikrahman/spaceShooter#for-windows)
-  - [Linux/Debian based systems](https://github.com/tasdikrahman/spaceShooter#linuxdebian-based-systems)
-    - [Option 1: Download the zipped executable file](https://github.com/tasdikrahman/spaceShooter#option-1-download-the-zipped-executable-file)
+- [For Windows](https://github.com/tasdikrahman/spaceShooter#for-windows)
+- [Linux/Debian based systems](https://github.com/tasdikrahman/spaceShooter#linuxdebian-based-systems)
+- [Option 1: Download the zipped executable file](https://github.com/tasdikrahman/spaceShooter#option-1-download-the-zipped-executable-file)
     - [Option 2: Build from source](https://github.com/tasdikrahman/spaceShooter#option-2-build-from-source)
   - [For MAC OS X](https://github.com/tasdikrahman/spaceShooter#for-mac-os-x)
 - [Contributing](https://github.com/tasdikrahman/spaceShooter#contributing)
@@ -27,13 +25,38 @@ This project is implemented using `Jupyter Notebook (.ipynb File)` and `Python`.
 - [License](https://github.com/tasdikrahman/spaceShooter#license)
 - [Donation](https://github.com/tasdikrahman/spaceShooter#donation)
 
-## Demo
+## Project Theory
 
-[[Back to top]](https://github.com/tasdikrahman/spaceShooter#index)
+[[Back to top]](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition#index)
 
-Follow the youtube video to see how I fared on ``spaceShooter``
+##### Introduction
+Face Recognition is a process of face detection and then classifying the faces into different classes. The methods used in this case are based on the application of Viola-Jones, for detecting the face using cascade classifier, and Eigen Faces algorithm, for face classification and it is based on the PCA algorithm. PCA is known as Principal component analysis which in other words is feature reduction or dimensionality reduction algorithm.
 
-[![Space Shooter Demo - Youtube](http://i.imgur.com/bHjlJfG.jpg)](https://www.youtube.com/watch?v=o99zpLsM-ZI)
+##### The very basic flow of the Face Recognition:
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/flowchart.png)
+- How the Viola-Jones algorithm detects Faces:→ Viola-Jones algorithm works for frontal face recognition rather than faces looking sideways. It detects the face location on the grayscale image first then it detects on the colored one. A sliding box is used to trace all the image and Haar features are obtained for each region.
+- Haar-Like Features:→ ​ These are the features named Edge, Line, and four-sided features.
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haarlike.png)
+These features help the machine to understand the features of the image. For.ex. The edge feature has a one-sided dark and the other is light, This filter is, therefore, good at edge detection like the nose, lips line, etc. To obtain the feature value these features are placed over the region in the sliding rectangle and the sum in the light region is subtracted from the sum of pixels in the dark region.
+- Haar-Like Features application:→
+| ![Screen 1](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) | ![Screen 2](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/haar-app.png) |
+- Integral Image:→
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/ii.png)
+​Integral image is used to obtain the values of Haar-like feature values because otherwise, it is computationally very expensive to calculate it, because of the large number of image pixels.
+- Training:→
+The algorithm in training is setting a minimum threshold to determine whether something can be classified as a feature or not. The computation can be really expensive depending on the different possible combinations of features for each region of the sliding rectangle.
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/cascade.png)
+For each region, a linear combination of the weak classifiers(on the right) is obtained toform a strong classifier(on the left). AdaBoost is used forthis task. Adaboost works like,first we classify images using important feature acc. to us. The images for whichclassification is the wrong Adaboost uses another feature to classify wrong classified images, giving more importance to the wrong classified images. In other words, increasing the weight for these images in the overall algorithm. Similarly, we will go for the next feature and at last giving larger weight to the last image. Thus Adaboost forms the classifier from these Weak classifiers.
+- Cascading:→
+​It is a hack to increase the speed and accuracy of Boosting. 
+![](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/cascade-window.png)
+The feature is looked in the sub-window on the image and if Feature-i (Fi) is not present in this window then that sub-window is rejected and the process stopped for that window thus preventing further checking of the features. Since we have to do it for each feature it may be slow without Cascading.
+
+##### How the Eigen-Faces algorithm classifies the Faces ​ (All images are obtained from my code of Facial Recognition*)​ :
+- Training:→
+- 1.) ​ Suppose we have M images of dimensions NxN.
+| ![Screen 1](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces1.png) | ![Screen 2](https://github.com/Lovepreet-Singh-LPSK/Face-Recognition/blob/master/pics/faces2.png) |
+
 
 ## Screenshots
 
